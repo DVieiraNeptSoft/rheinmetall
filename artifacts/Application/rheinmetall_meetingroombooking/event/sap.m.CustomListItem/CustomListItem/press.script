@@ -1,0 +1,9 @@
+const context = oEvent.oSource.getBindingContext();  
+
+const value = context.getProperty("roomID");
+
+oInputMeetingRoomSearchHelp.setValue(value);
+
+oButtonSubmitBooking.setEnabled(true);
+
+DialogAvailableMeetingRooms.close();

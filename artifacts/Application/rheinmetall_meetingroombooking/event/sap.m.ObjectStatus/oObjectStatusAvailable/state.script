@@ -1,0 +1,13 @@
+if (typeof isAvailable === "undefined" || isAvailable === null || isAvailable === "") {
+    return;
+}
+
+var formattedText;
+
+if (isAvailable === "Available For Booking") {
+    formattedText = "Success";
+} else {
+    formattedText = "Error";
+}
+
+return formattedText;

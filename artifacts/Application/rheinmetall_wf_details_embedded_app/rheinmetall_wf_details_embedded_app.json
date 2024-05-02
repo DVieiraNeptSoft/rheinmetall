@@ -1,0 +1,525 @@
+{
+	"id": "929a05bc-686e-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-19T10:18:27.873Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+			"fieldName": "oSimpleForm",
+			"fieldParent": 0,
+			"fieldType": "sap.ui.layout.form.SimpleForm",
+			"script": "",
+			"customComponent": false,
+			"bindingValue": "Generic Object",
+			"bindingType": "u",
+			"bindingSource": "P9",
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "editable",
+					"grouping": "Properties",
+					"value": "true",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "0a99ac2a-f80f-4fb6-a564-c097f69bee8c",
+					"fieldName": "lbloSimpleFormuserEmail",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Request From",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "26a31bb7-4662-4bb3-f990-21045684db96",
+					"fieldName": "txtoSimpleFormuserEmail",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/userEmail}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "5c9b79b1-156b-46a6-86ce-7890c2c93d23",
+					"fieldName": "lbloSimpleFormroomID",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Booked Room",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "2099f5a1-b2de-4655-83ca-93aa62e3fbb1",
+					"fieldName": "txtoSimpleFormroomID",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/roomID}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "fa4e7f66-33ba-4f10-cc87-3aa217fa662b",
+					"fieldName": "lbloSimpleFormroomDescription",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Booked Room Description",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "b07a9255-bd40-466c-d529-5c1dbdb2b6f5",
+					"fieldName": "txtoSimpleFormroomDescription",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/roomDescription}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "28c3abce-7367-4e6a-f341-5152265ad8ff",
+					"fieldName": "lbloSimpleFormroomBookedBegin",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Booking Requested From",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "13ccf55e-e815-4ecc-d426-15f8ddf95203",
+					"fieldName": "txtoSimpleFormroomBookedBegin",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/roomBookedBegin}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "fa7bd4ec-1b93-4ce9-8674-e61b2ac7f26a",
+					"fieldName": "lbloSimpleFormroomBookedEnd",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "To",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "bb60852b-5af3-46b7-89c4-324b19dc9d4a",
+					"fieldName": "txtoSimpleFormroomBookedEnd",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/roomBookedEnd}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "5895eafc-9d9a-4e80-954f-a875f1c8ca40",
+					"fieldName": "lbloSimpleFormroomEquipment",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Room Equipment",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "062e70a0-031c-415b-9a85-58e1b1af7406",
+					"fieldName": "txtoSimpleFormroomEquipment",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/roomEquipment}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "7ea5ce53-9dee-4622-a057-6b626ef1e2a5",
+					"fieldName": "lbloSimpleFormroomCapacity",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Room Capacity",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "ace0e15a-c64a-4116-e72e-c9e938bdaf32",
+					"fieldName": "txtoSimpleFormroomCapacity",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/roomCapacity}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "c98543a0-0b34-4226-9316-8f9c14633065",
+					"fieldName": "lbloSimpleFormroomStatus",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Booking Request Status",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "4c51d61f-f126-4362-f2b0-b0b0572295f3",
+					"fieldName": "ObjectStatus",
+					"fieldParent": "9af248d7-7f19-406c-f8c0-338868fdaff2",
+					"fieldType": "sap.m.ObjectStatus",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/roomStatus}",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "state",
+							"grouping": "Properties",
+							"value": "Warning",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "c2cf3d9a-0a0b-4169-f40a-074da5df024d",
+					"fieldName": "oModelArrayRoomsInfo",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model.array",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "API rheinmetall_meetingroomsinfo>rheinmetall_meetingroomsinfo",
+					"bindingType": "h",
+					"bindingSource": "API",
+					"bindingParentID": "98B3B313-DF68-EE11-9937-0022489E2195",
+					"bindingPathID": "43467e9a-cefe-4335-ba4d-a152ec44686b",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "1d3de09b-6d02-422c-d1e3-c2ca86221057",
+					"fieldName": "oModelArrayRoomsAvailability",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model.array",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "API rheinmetall_meetingroomsavailability>rheinmetall_meetingroomsavailability",
+					"bindingType": "h",
+					"bindingSource": "API",
+					"bindingParentID": "BF9CA921-DF68-EE11-9937-0022489E2195",
+					"bindingPathID": "de3bd243-1348-4bd0-d663-63273ce958eb",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "f721ea44-e7be-4fc2-dc43-7e915840a16b",
+					"fieldName": "oJavascript",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/oJavascript.js",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "7014f37b-c572-42ce-d673-3854f5d93135",
+					"fieldName": "oRestAPIGetMeetingRoomAvailability",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "bf9ca921-df68-ee11-9937-0022489e2195",
+					"restOperation": "f5a6601d-1270-4e8e-f1ef-77ddf20c1c39",
+					"request": [],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "de3bd243-1348-4bd0-d663-63273ce958eb",
+							"modelFieldNo": "1d3de09b-6d02-422c-d1e3-c2ca86221057"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "file://event/neptune.restapi/oRestAPIGetMeetingRoomAvailability/ajaxSuccess.script",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "e4c28a78-bca9-484b-efbe-2c8ee5387da9",
+					"fieldName": "oRestAPIGetMeetingRoomsInfo",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "98b3b313-df68-ee11-9937-0022489e2195",
+					"restOperation": "eb49f2cb-8621-475c-ed61-fbca7cd50bca",
+					"request": [],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "43467e9a-cefe-4335-ba4d-a152ec44686b",
+							"modelFieldNo": "c2cf3d9a-0a0b-4169-f40a-074da5df024d"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "file://event/neptune.restapi/oRestAPIGetMeetingRoomsInfo/ajaxSuccess.js",
+							"language": "javascript",
+							"translation": []
+						}
+					],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "23.10.23.1230",
+	"application": "rheinmetall_wf_details_embedded_app",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "file:///css.css",
+	"compiledCss": "file://script/undefined/undefined.script",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [
+		{
+			"id": "bf9ca921-df68-ee11-9937-0022489e2195",
+			"name": "API rheinmetall_meetingroomsavailability",
+			"ver": "23.10.18.1621"
+		},
+		{
+			"id": "98b3b313-df68-ee11-9937-0022489e2195",
+			"name": "API rheinmetall_meetingroomsinfo",
+			"ver": "23.10.16.1126"
+		}
+	],
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195"
+}

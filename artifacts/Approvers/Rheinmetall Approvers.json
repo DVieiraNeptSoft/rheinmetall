@@ -1,0 +1,20 @@
+{
+	"id": "fdfff2b6-966d-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-18T09:14:18.696Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"items": [
+		{
+			"id": "3c1a9fbe-676e-443e-d5d6-388bed21460f",
+			"orgUnit": "R",
+			"orgValue": "System Admin",
+			"amountFrom": 0,
+			"amountTo": 0,
+			"operation": "O",
+			"taskType": [],
+			"orgId": "c521a294-ef3b-eb11-9fb4-000d3ab21bef"
+		}
+	],
+	"name": "Rheinmetall Approvers",
+	"description": null,
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195"
+}

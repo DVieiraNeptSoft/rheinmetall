@@ -1,0 +1,21 @@
+{
+	"id": "05c331af-976d-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-18T09:21:15.200Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "appSendEmail",
+	"ver": "23.10.19.1130",
+	"description": null,
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "3d715534-976d-ee11-9937-0022489e2195",
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195"
+}

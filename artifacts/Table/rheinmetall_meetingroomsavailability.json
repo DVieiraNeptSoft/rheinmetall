@@ -1,0 +1,60 @@
+{
+	"id": "796c06ea-de68-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-12T09:08:33.270Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"fields": [
+		{
+			"id": "e86e5168-81e2-4c61-dd77-81f06f621f19",
+			"fieldName": "roomID",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "c76a2b37-bbc2-4b5e-9007-6b71d1075962",
+			"fieldName": "roomBookedBegin",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "3f26ebb9-6dd3-47c5-f311-5e689ce9631b",
+			"fieldName": "roomBookedEnd",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "663392b0-f0d1-4632-eeb7-6cae2bbbcc95",
+			"fieldName": "keyFilter",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "roomID + roomBookedBegin + roomBookedEnd",
+			"isNullable": true
+		},
+		{
+			"id": "db71b8f2-6df5-427b-c86e-747cab7c716d",
+			"fieldName": "roomStatus",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "6e0fc921-759e-4ec0-94af-18d080785f97",
+			"fieldName": "userEmail",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "rheinmetall_meetingroomsavailability",
+	"description": null,
+	"ver": "24.05.02.1257",
+	"enableAudit": true,
+	"includeDataInPackage": true,
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195",
+	"rolesRead": [],
+	"rolesWrite": []
+}

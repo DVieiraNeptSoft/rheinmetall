@@ -1,0 +1,4 @@
+var meetingRoomsInfo = modeloMultiModelMeetingRoomsInfo.getData();
+var bookedRooms = modeloMultiModelMeetingRoomsAvailability.getData();
+
+buildCalendarData(meetingRoomsInfo, bookedRooms);

@@ -1,0 +1,3 @@
+const binding = SinglePlanningCalendar.getBinding("appointments");
+const filter = new sap.ui.model.Filter("roomID", "EQ", this.getSelectedKey());
+binding.filter([filter]);

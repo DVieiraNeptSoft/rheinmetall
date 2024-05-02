@@ -1,0 +1,235 @@
+{
+	"id": "b257a2d0-dd68-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-12T09:00:40.250Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/DVieiraNeptSoft/rheinmetall"
+	},
+	"name": "Rheinmetall",
+	"description": null,
+	"ver": "24.05.02.1256",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "e5337857-966d-ee11-9937-0022489e2195",
+			"application": "planet9_rheinmetall_booking_inbox",
+			"title": "Workflow Inbox",
+			"description": "Workflow Inbox - Fiori 3",
+			"package": {
+				"id": "B257A2D0-DD68-EE11-9937-0022489E2195"
+			}
+		},
+		{
+			"id": "a75b111d-e168-ee11-9937-0022489e2195",
+			"application": "rheinmetall_meetingroombooking",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "B257A2D0-DD68-EE11-9937-0022489E2195"
+			}
+		},
+		{
+			"id": "929a05bc-686e-ee11-9937-0022489e2195",
+			"application": "rheinmetall_wf_details_embedded_app",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "B257A2D0-DD68-EE11-9937-0022489E2195"
+			}
+		},
+		{
+			"id": "259cd162-7f6e-ee11-9937-0022489e2195",
+			"application": "rheinmetall_formsapp",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "B257A2D0-DD68-EE11-9937-0022489E2195"
+			}
+		},
+		{
+			"id": "06529551-2b6c-ee11-9937-0022489e2195",
+			"application": "rheinmetall_meetingroombookingviewer",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "B257A2D0-DD68-EE11-9937-0022489E2195"
+			}
+		}
+	],
+	"api": [
+		{
+			"id": "bf9ca921-df68-ee11-9937-0022489e2195",
+			"name": "API rheinmetall_meetingroomsavailability",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "98b3b313-df68-ee11-9937-0022489e2195",
+			"name": "API rheinmetall_meetingroomsinfo",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "8185b5b9-a36d-ee11-9937-0022489e2195",
+			"name": "rheinmetallScripts",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "2bf7343e-936e-ee11-9937-0022489e2195",
+			"name": "API rheinmetall_meetingroom_feedback",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "796c06ea-de68-ee11-9937-0022489e2195",
+			"name": "rheinmetall_meetingroomsavailability",
+			"description": null
+		},
+		{
+			"id": "4baa38f9-dd68-ee11-9937-0022489e2195",
+			"name": "rheinmetall_meetingroomsinfo",
+			"description": null
+		},
+		{
+			"id": "1b47ee2c-936e-ee11-9937-0022489e2195",
+			"name": "rheinmetall_meetingroom_feedback",
+			"description": null
+		}
+	],
+	"jsclass": [
+		{
+			"id": "30d73045-976d-ee11-9937-0022489e2195",
+			"name": "workflowBookingStateUpdate",
+			"description": null
+		},
+		{
+			"id": "05c331af-976d-ee11-9937-0022489e2195",
+			"name": "appSendEmail",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "3d715534-976d-ee11-9937-0022489e2195",
+			"name": "Rheinmetall_Scripts",
+			"description": null
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [
+		{
+			"id": "1fe081b8-816e-ee11-9937-0022489e2195",
+			"name": "rheinmetall_adaptive_list",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		}
+	],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "e4f55caf-936e-ee11-9937-0022489e2195",
+			"description": null,
+			"name": "rheinmetall_meetingroom_feedback"
+		},
+		{
+			"id": "e457da6c-a56d-ee11-9937-0022489e2195",
+			"description": null,
+			"name": "rheinmetall_meetingRoomBooking"
+		},
+		{
+			"id": "5c6a8c9e-a56d-ee11-9937-0022489e2195",
+			"description": null,
+			"name": "rheinmetall_booking_inbox"
+		},
+		{
+			"id": "01280f82-a56d-ee11-9937-0022489e2195",
+			"description": null,
+			"name": "rheinmetall_meetingroombookingviewer"
+		}
+	],
+	"category": [
+		{
+			"id": "f94b15be-a56d-ee11-9937-0022489e2195",
+			"description": null,
+			"name": "rheinmetall_tilegroup"
+		},
+		{
+			"id": "2858e3ba-306f-ee11-9937-0022489e2195",
+			"description": null,
+			"name": "rheinmetall_mobile_tilegroup"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "fa6918e8-a56d-ee11-9937-0022489e2195",
+			"name": "rheinmetall_launchpad",
+			"description": null
+		},
+		{
+			"id": "c276add1-306f-ee11-9937-0022489e2195",
+			"name": "rheinmetall_launchpad_mobile",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [
+		{
+			"id": "96789ff9-a26d-ee11-9937-0022489e2195",
+			"name": "rheinmetall_approved_email_template",
+			"description": "This email is sent once a meeting room booking is approved"
+		},
+		{
+			"id": "30bd7d91-9f6d-ee11-9937-0022489e2195",
+			"name": "rheinmetall_initial_email_template",
+			"description": "Sending an email to a user"
+		},
+		{
+			"id": "2a590460-716e-ee11-9937-0022489e2195",
+			"name": "rheinmetall_rejected_email_template",
+			"description": "Your booking was Rejected"
+		}
+	],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [
+		{
+			"id": "dc4643cf-896d-ee11-9937-0022489e2195",
+			"title": "Rheinmetall Booking Approval",
+			"subTitle": "Workflow for approving / rejecting submitted bookings"
+		}
+	],
+	"connector": [
+		{
+			"id": "66ef3993-816e-ee11-9937-0022489e2195",
+			"name": "rheinmetall_adaptive_connector",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [
+		{
+			"id": "fdfff2b6-966d-ee11-9937-0022489e2195",
+			"name": "Rheinmetall Approvers",
+			"description": null
+		}
+	],
+	"wf_taskaction": [
+		{
+			"id": "a13e228a-966d-ee11-9937-0022489e2195",
+			"name": "Approve Rheinmetall Bookings",
+			"description": null
+		}
+	]
+}

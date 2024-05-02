@@ -1,0 +1,11 @@
+.marginTop {
+  padding-top: 13px;
+}
+
+.marginRight {
+  padding-right: 10px;
+}
+
+.textWeight {
+  font-weight: bold !important;
+}

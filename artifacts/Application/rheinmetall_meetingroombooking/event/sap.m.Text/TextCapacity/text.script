@@ -1,0 +1,3 @@
+if (typeof roomCapacity === "undefined" || roomCapacity === null || roomCapacity === "") { return; }  
+var formattedText = roomCapacity + ' People'; 
+return formattedText;

@@ -1,0 +1,27 @@
+{
+	"id": "30d73045-976d-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-18T09:18:17.346Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "796C06EA-DE68-EE11-9937-0022489E2195",
+			"name": "rheinmetall_meetingroomsavailability",
+			"contextname": "rheinmetall_meetingroomsavailability"
+		}
+	],
+	"apis": [],
+	"name": "workflowBookingStateUpdate",
+	"ver": "23.10.19.1159",
+	"description": null,
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "3d715534-976d-ee11-9937-0022489e2195",
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195"
+}

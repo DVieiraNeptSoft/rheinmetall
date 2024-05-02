@@ -1,0 +1,2161 @@
+{
+	"id": "06529551-2b6c-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-16T13:56:44.340Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "716975e6-4cc1-4984-ba5d-1f7a9de10dfc",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "69663270-d54e-4181-e73a-87a0aa7da6fa",
+					"fieldName": "PageCalendar",
+					"fieldParent": "716975e6-4cc1-4984-ba5d-1f7a9de10dfc",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Meeting Room Booking Calendar Viewer",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "1f4a056d-f88a-4ba7-d5c0-0e4f8c5ac9b9",
+							"fieldName": "HBox",
+							"fieldParent": "69663270-d54e-4181-e73a-87a0aa7da6fa",
+							"fieldType": "sap.m.HBox",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "width",
+									"grouping": "Properties",
+									"value": "100%",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "marginRight",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "justifyContent",
+									"grouping": "Properties",
+									"value": "End",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "backgroundDesign",
+									"grouping": "Properties",
+									"value": "Solid",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "3538a826-0344-426d-cac8-4cdfe76e0815",
+									"fieldName": "Label",
+									"fieldParent": "1f4a056d-f88a-4ba7-d5c0-0e4f8c5ac9b9",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Filter Booked Room By:",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "marginTop",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "b99395e4-81ae-4637-f699-eeec40897b03",
+									"fieldName": "selectBookedRoom",
+									"fieldParent": "1f4a056d-f88a-4ba7-d5c0-0e4f8c5ac9b9",
+									"fieldType": "sap.m.Select",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Generic Array",
+									"bindingType": "h",
+									"bindingSource": "P9",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClassMargin",
+											"grouping": "Properties",
+											"value": "sapUiSmallMarginBegin",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "change",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.Select/selectBookedRoom/change.script",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "ec5004fd-fa3d-4cea-b9a2-68eb4bda1ba2",
+							"fieldName": "SinglePlanningCalendar",
+							"fieldParent": "69663270-d54e-4181-e73a-87a0aa7da6fa",
+							"fieldType": "sap.m.SinglePlanningCalendar",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Generic Array",
+							"bindingType": "h",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "startHour",
+									"grouping": "Properties",
+									"value": "9",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "fullDay",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "stickyMode",
+									"grouping": "Properties",
+									"value": "All",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "appointmentSelect",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.SinglePlanningCalendar/SinglePlanningCalendar/appointmentSelect.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "393c8b77-8667-4fb8-df7d-2d27e292d508",
+									"fieldName": "CalendarAppointment",
+									"fieldParent": "ec5004fd-fa3d-4cea-b9a2-68eb4bda1ba2",
+									"fieldType": "sap.ui.unified.CalendarAppointment",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{roomID}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "startDate",
+											"grouping": "Properties",
+											"value": "{roomBookedBegin}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "endDate",
+											"grouping": "Properties",
+											"value": "{roomBookedEnd}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "color",
+											"grouping": "Properties",
+											"value": "{roomColour}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "6b001446-e321-48bd-f977-c598b1a5a337",
+							"fieldName": "oBarFooterMainPage",
+							"fieldParent": "69663270-d54e-4181-e73a-87a0aa7da6fa",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setFooter",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "91752d42-0316-4cd0-f146-91c932eb1f99",
+									"fieldName": "Left",
+									"fieldParent": "6b001446-e321-48bd-f977-c598b1a5a337",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentLeft",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "5e36d055-2e59-49ed-f62a-d9c6be77ed22",
+											"fieldName": "ButtonRefresh",
+											"fieldParent": "91752d42-0316-4cd0-f146-91c932eb1f99",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Emphasized",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://refresh",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/ButtonRefresh/press.script",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "356cb7da-3e02-446d-f66c-5cdb9b32c901",
+									"fieldName": "Right",
+									"fieldParent": "6b001446-e321-48bd-f977-c598b1a5a337",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "478ae543-e64c-422c-dc1f-329727dce972",
+											"fieldName": "ButtonListView",
+											"fieldParent": "356cb7da-3e02-446d-f66c-5cdb9b32c901",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Emphasized",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "List View",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://list",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(PageListView);",
+													"script": "App.to(PageListView);",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "25ed2d89-0377-47ca-80bf-7abad8446f0a",
+					"fieldName": "PageListView",
+					"fieldParent": "716975e6-4cc1-4984-ba5d-1f7a9de10dfc",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Meeting Room Booking List Viewer",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.back();",
+							"script": "App.back();",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "3a64b8b7-5e2d-44e0-a364-806b28c04a22",
+							"fieldName": "oBarSubHeader",
+							"fieldParent": "25ed2d89-0377-47ca-80bf-7abad8446f0a",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setSubHeader",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "a92eafe6-5f59-41e9-d447-78bdd01c059a",
+									"fieldName": "Middle",
+									"fieldParent": "3a64b8b7-5e2d-44e0-a364-806b28c04a22",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentMiddle",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "d66e0e37-df4c-411d-f1d7-5865bf3dca6a",
+											"fieldName": "SearchField",
+											"fieldParent": "a92eafe6-5f59-41e9-d447-78bdd01c059a",
+											"fieldType": "sap.m.SearchField",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "placeholder",
+													"grouping": "Properties",
+													"value": "Search for a meeting room...",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "liveChange",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.SearchField/SearchField/liveChange.script",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "b60801e3-facb-4206-fec9-c971c0362784",
+							"fieldName": "SimpleForm",
+							"fieldParent": "25ed2d89-0377-47ca-80bf-7abad8446f0a",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "layout",
+									"grouping": "Properties",
+									"value": "ResponsiveGridLayout",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "editable",
+									"grouping": "Properties",
+									"value": "true",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "df828d5f-1695-4cfe-fe00-5ff4c88c2f33",
+									"fieldName": "ListViewRoomsBooked",
+									"fieldParent": "b60801e3-facb-4206-fec9-c971c0362784",
+									"fieldType": "sap.m.List",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Generic Array",
+									"bindingType": "h",
+									"bindingSource": "P9",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "c685c3ab-f62d-4fff-caf6-2337ba26f72d",
+											"fieldName": "CustomListItem",
+											"fieldParent": "df828d5f-1695-4cfe-fe00-5ff4c88c2f33",
+											"fieldType": "sap.m.CustomListItem",
+											"script": "",
+											"customComponent": false,
+											"disabled": true,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Active",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.CustomListItem/CustomListItem/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "3d7966e1-3cb3-4067-fba9-3e3c5c4ad3a9",
+													"fieldName": "VBox",
+													"fieldParent": "c685c3ab-f62d-4fff-caf6-2337ba26f72d",
+													"fieldType": "sap.m.VBox",
+													"script": "",
+													"customComponent": false,
+													"disabled": true,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "8e09334c-7235-4b90-ad47-eebc1dc2ec6c",
+															"fieldName": "HBox1",
+															"fieldParent": "3d7966e1-3cb3-4067-fba9-3e3c5c4ad3a9",
+															"fieldType": "sap.m.HBox",
+															"script": "",
+															"customComponent": false,
+															"disabled": true,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "25f4ba70-334c-43d7-a861-5f05ac54dbeb",
+																	"fieldName": "ObjectAttributeRoomIDText",
+																	"fieldParent": "8e09334c-7235-4b90-ad47-eebc1dc2ec6c",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "title",
+																			"grouping": "Properties",
+																			"value": "Booked Room",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClassMargin",
+																			"grouping": "Properties",
+																			"value": "sapUiSmallMarginEnd",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textWeight",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "390d8548-1dc6-4fc5-83d2-740ed1732a93",
+																	"fieldName": "ObjectAttributeRoomIDField",
+																	"fieldParent": "8e09334c-7235-4b90-ad47-eebc1dc2ec6c",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{roomID}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "19a9c78c-ce32-4dc5-86ac-3276bd19f32f",
+															"fieldName": "HBox4",
+															"fieldParent": "3d7966e1-3cb3-4067-fba9-3e3c5c4ad3a9",
+															"fieldType": "sap.m.HBox",
+															"script": "",
+															"customComponent": false,
+															"disabled": true,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "3a5609c7-e2f3-414c-f833-b67ecf309628",
+																	"fieldName": "ObjectAttributeRoomDescText",
+																	"fieldParent": "19a9c78c-ce32-4dc5-86ac-3276bd19f32f",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "title",
+																			"grouping": "Properties",
+																			"value": "Room Description",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClassMargin",
+																			"grouping": "Properties",
+																			"value": "sapUiSmallMarginEnd",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textWeight",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "7ed36772-51a0-4097-dc52-d90f64269e04",
+																	"fieldName": "ObjectAttributeRoomDescField",
+																	"fieldParent": "19a9c78c-ce32-4dc5-86ac-3276bd19f32f",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{roomDescription}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "7417d78e-a396-441f-da14-485ac8493075",
+															"fieldName": "HBox2",
+															"fieldParent": "3d7966e1-3cb3-4067-fba9-3e3c5c4ad3a9",
+															"fieldType": "sap.m.HBox",
+															"script": "",
+															"customComponent": false,
+															"disabled": true,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "alignItems",
+																	"grouping": "Properties",
+																	"value": "Stretch",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "d1367e49-2fa3-4b3c-e138-49d032d6bff1",
+																	"fieldName": "ObjectAttributeRoomDateBeginText",
+																	"fieldParent": "7417d78e-a396-441f-da14-485ac8493075",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "title",
+																			"grouping": "Properties",
+																			"value": "From",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClassMargin",
+																			"grouping": "Properties",
+																			"value": "sapUiSmallMarginEnd",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textWeight",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "21ece2e5-a16f-4a7a-e7bd-9d6d7130c8e8",
+																	"fieldName": "oDateTimePickerBegin",
+																	"fieldParent": "7417d78e-a396-441f-da14-485ac8493075",
+																	"fieldType": "sap.m.DateTimePicker",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "width",
+																			"grouping": "Properties",
+																			"value": "190px",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "editable",
+																			"grouping": "Properties",
+																			"value": "false",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "dateValue",
+																			"grouping": "Properties",
+																			"value": "{roomBookedBegin}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "f5ffe0af-769f-4290-aa2b-26474035e373",
+															"fieldName": "HBox3",
+															"fieldParent": "3d7966e1-3cb3-4067-fba9-3e3c5c4ad3a9",
+															"fieldType": "sap.m.HBox",
+															"script": "",
+															"customComponent": false,
+															"disabled": true,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "alignItems",
+																	"grouping": "Properties",
+																	"value": "Stretch",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "dcf4bf35-494b-47b5-9e7a-f2bfc7cedbfa",
+																	"fieldName": "ObjectAttributeRoomDateEndText",
+																	"fieldParent": "f5ffe0af-769f-4290-aa2b-26474035e373",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "title",
+																			"grouping": "Properties",
+																			"value": "To",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClassMargin",
+																			"grouping": "Properties",
+																			"value": "sapUiSmallMarginEnd",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textWeight",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "6f0117ca-31b5-47d1-c59d-a51e426ca637",
+																	"fieldName": "oDateTimePickerEnd",
+																	"fieldParent": "f5ffe0af-769f-4290-aa2b-26474035e373",
+																	"fieldType": "sap.m.DateTimePicker",
+																	"script": "",
+																	"customComponent": false,
+																	"disabled": true,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "width",
+																			"grouping": "Properties",
+																			"value": "190px",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "editable",
+																			"grouping": "Properties",
+																			"value": "false",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "dateValue",
+																			"grouping": "Properties",
+																			"value": "{roomBookedEnd}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"fieldNo": "0bca4315-7767-4758-eb54-a9ef2611cf3b",
+											"fieldName": "ObjectListItem",
+											"fieldParent": "df828d5f-1695-4cfe-fe00-5ff4c88c2f33",
+											"fieldType": "sap.m.ObjectListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Active",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "title",
+													"grouping": "Properties",
+													"value": "{roomListViewTitle}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "numberState",
+													"grouping": "Properties",
+													"value": "Success",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "intro",
+													"grouping": "Properties",
+													"value": "Booked Room: {roomID}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "{roomIcon}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.ObjectListItem/ObjectListItem/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "4db535ab-17e0-46b7-9cff-a6caebba83c8",
+					"fieldName": "Popups",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "2abf348b-5620-43f4-e96a-00bf0abdb614",
+							"fieldName": "oPopoverBookingDetails",
+							"fieldParent": "4db535ab-17e0-46b7-9cff-a6caebba83c8",
+							"fieldType": "sap.m.Popover",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Generic Object",
+							"bindingType": "u",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "placement",
+									"grouping": "Properties",
+									"value": "Auto",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "offsetY",
+									"grouping": "Properties",
+									"value": "100",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "contentWidth",
+									"grouping": "Properties",
+									"value": "800px",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "9ce130a7-37ad-4a40-dcbb-48aabf818b1f",
+									"fieldName": "SimpleFormBookingDetails",
+									"fieldParent": "2abf348b-5620-43f4-e96a-00bf0abdb614",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "Booking Details",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "GridLayout",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "6520c815-4ad9-4d4b-dd7d-91d129f2cf83",
+											"fieldName": "LabelRoomIDdescription",
+											"fieldParent": "9ce130a7-37ad-4a40-dcbb-48aabf818b1f",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Booked Room",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "d434d72b-909c-43ee-fb65-d989b7548e40",
+											"fieldName": "TextRoomIDdescription",
+											"fieldParent": "9ce130a7-37ad-4a40-dcbb-48aabf818b1f",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomID}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "41f5ed8e-436b-4ad6-bd6f-f7226850b533",
+											"fieldName": "LabelBookingDateBegin",
+											"fieldParent": "9ce130a7-37ad-4a40-dcbb-48aabf818b1f",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "From",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "facc56ef-7fc0-46d4-f4ab-eed8c03b5029",
+											"fieldName": "TextBookingDateBegin",
+											"fieldParent": "9ce130a7-37ad-4a40-dcbb-48aabf818b1f",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomBookedBegin}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "850ae6a7-02df-414c-eab2-8facfc6f2910",
+											"fieldName": "LabelBookingDateEnd",
+											"fieldParent": "9ce130a7-37ad-4a40-dcbb-48aabf818b1f",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "To",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "1c88b836-8fcf-467a-a20b-8933ef38881d",
+											"fieldName": "TextBookingDateEnd",
+											"fieldParent": "9ce130a7-37ad-4a40-dcbb-48aabf818b1f",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomBookedEnd}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "e9174398-1858-46a1-8cd8-4081fd32e4b1",
+									"fieldName": "SimpleFormRoomDetails",
+									"fieldParent": "2abf348b-5620-43f4-e96a-00bf0abdb614",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "Meeting Room Details",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "GridLayout",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "a8b044c1-644b-4f6e-dd9e-db2b22871325",
+											"fieldName": "LabelBookedRoomDescription",
+											"fieldParent": "e9174398-1858-46a1-8cd8-4081fd32e4b1",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Room Description",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f4808054-b276-4938-815f-6129d315bc05",
+											"fieldName": "TextBookedRoomDescription",
+											"fieldParent": "e9174398-1858-46a1-8cd8-4081fd32e4b1",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomDescription}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "ea98ee56-56e2-4093-9b08-c946cad20341",
+											"fieldName": "LabelBookedRoomEquipment",
+											"fieldParent": "e9174398-1858-46a1-8cd8-4081fd32e4b1",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Room Equipment",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "be42f86c-cce6-42d8-f17f-32e2b1bb2313",
+											"fieldName": "TextBookedRoomEquipment",
+											"fieldParent": "e9174398-1858-46a1-8cd8-4081fd32e4b1",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomEquipment}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f918d916-b5ad-4ad6-94c5-0c63c243d65b",
+											"fieldName": "LabelBookedRoomCapacity",
+											"fieldParent": "e9174398-1858-46a1-8cd8-4081fd32e4b1",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Room Capacity",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "8db44967-bd39-4d9f-e9a7-3533559bf1e0",
+											"fieldName": "TextBookedRoomCapacity",
+											"fieldParent": "e9174398-1858-46a1-8cd8-4081fd32e4b1",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomCapacity}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "aec5a8b8-c194-486d-a801-4c0770e63738",
+									"fieldName": "oBarFooter",
+									"fieldParent": "2abf348b-5620-43f4-e96a-00bf0abdb614",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"disabled": true,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setFooter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "c123cb4b-7e79-4c71-e252-2ecdc1fdcbbc",
+											"fieldName": "Right",
+											"fieldParent": "aec5a8b8-c194-486d-a801-4c0770e63738",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"disabled": true,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "579cb52a-8e11-4073-f1c8-bbeb492b4595",
+													"fieldName": "ButtonDeleteAppointment",
+													"fieldParent": "c123cb4b-7e79-4c71-e252-2ecdc1fdcbbc",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"disabled": true,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Negative",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Cancel Booking",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://delete",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "150f389c-a05e-44b9-d60e-92e8677011aa",
+							"fieldName": "ButtonDialogListBookingDetailsClose",
+							"fieldParent": "4db535ab-17e0-46b7-9cff-a6caebba83c8",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Reject",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "icon",
+									"grouping": "Properties",
+									"value": "sap-icon://sys-cancel-2",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "DialogListBookingDetails.close();",
+									"script": "DialogListBookingDetails.close();",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "20a4fceb-a429-46a3-9933-ed9412b9f6bf",
+							"fieldName": "DialogListBookingDetails",
+							"fieldParent": "4db535ab-17e0-46b7-9cff-a6caebba83c8",
+							"fieldType": "sap.m.Dialog",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Generic Object",
+							"bindingType": "u",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "endButton",
+									"grouping": "Associations",
+									"value": "ButtonDialogListBookingDetailsClose",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "9f84d4f7-f2ee-49c4-c465-3e971696d194",
+									"fieldName": "SimpleFormBookingDetails1",
+									"fieldParent": "20a4fceb-a429-46a3-9933-ed9412b9f6bf",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "Booking Details",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "GridLayout",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "01851a38-ccaa-4003-f377-4c7f9ad0443c",
+											"fieldName": "LabelRoomIDdescription1",
+											"fieldParent": "9f84d4f7-f2ee-49c4-c465-3e971696d194",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Booked Room",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "444996cb-ae23-4d8e-efe7-00399801ff7f",
+											"fieldName": "TextRoomIDdescription1",
+											"fieldParent": "9f84d4f7-f2ee-49c4-c465-3e971696d194",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomID}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "0371860f-3adb-4610-c8a2-f742d18f916a",
+											"fieldName": "LabelBookingDateBegin1",
+											"fieldParent": "9f84d4f7-f2ee-49c4-c465-3e971696d194",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "From",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "ffc942e7-111e-4254-9a55-eaca4fe61170",
+											"fieldName": "TextBookingDateBegin1",
+											"fieldParent": "9f84d4f7-f2ee-49c4-c465-3e971696d194",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomBookedBegin}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "efa129d1-f181-4224-ac39-90c69192685e",
+											"fieldName": "LabelBookingDateEnd1",
+											"fieldParent": "9f84d4f7-f2ee-49c4-c465-3e971696d194",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "To",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "04ecef42-1856-4318-9048-881d0f948d3d",
+											"fieldName": "TextBookingDateEnd1",
+											"fieldParent": "9f84d4f7-f2ee-49c4-c465-3e971696d194",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomBookedEnd}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "3814e7b2-4978-40e5-e70c-027989fc5fdc",
+									"fieldName": "SimpleFormRoomDetails1",
+									"fieldParent": "20a4fceb-a429-46a3-9933-ed9412b9f6bf",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "Meeting Room Details",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "GridLayout",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "9de66cb1-3d55-4627-bbb5-ccd0e005e2ca",
+											"fieldName": "LabelBookedRoomDescription1",
+											"fieldParent": "3814e7b2-4978-40e5-e70c-027989fc5fdc",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Room Description",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "0f592994-50e5-48fa-8090-ce41c085f8a5",
+											"fieldName": "TextBookedRoomDescription1",
+											"fieldParent": "3814e7b2-4978-40e5-e70c-027989fc5fdc",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomDescription}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "11325810-de21-4f83-a0ba-aea1c1be81b2",
+											"fieldName": "LabelBookedRoomEquipment1",
+											"fieldParent": "3814e7b2-4978-40e5-e70c-027989fc5fdc",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Room Equipment",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "b14695df-db75-481b-ad06-bdeed362b536",
+											"fieldName": "TextBookedRoomEquipment1",
+											"fieldParent": "3814e7b2-4978-40e5-e70c-027989fc5fdc",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomEquipment}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "d8316e26-a43e-468b-b083-365363072e1c",
+											"fieldName": "LabelBookedRoomCapacity1",
+											"fieldParent": "3814e7b2-4978-40e5-e70c-027989fc5fdc",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Room Capacity",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "design",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f5424180-7f68-4664-8999-f9f11e228963",
+											"fieldName": "TextBookedRoomCapacity1",
+											"fieldParent": "3814e7b2-4978-40e5-e70c-027989fc5fdc",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/roomCapacity}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "433a6fc3-d86e-4385-9c56-85a6f56ade71",
+					"fieldName": "CalendarResources",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "3796615d-299d-4371-d50d-8256d746cdfb",
+							"fieldName": "SinglePlanningCalendarMonthView",
+							"fieldParent": "433a6fc3-d86e-4385-9c56-85a6f56ade71",
+							"fieldType": "sap.m.SinglePlanningCalendarMonthView",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "key",
+									"grouping": "Properties",
+									"value": "Month",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Month",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "2659524e-c3a4-4c28-cc97-98c72e6bdf11",
+							"fieldName": "SinglePlanningCalendarWeekView",
+							"fieldParent": "433a6fc3-d86e-4385-9c56-85a6f56ade71",
+							"fieldType": "sap.m.SinglePlanningCalendarWeekView",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "key",
+									"grouping": "Properties",
+									"value": "Week",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Week",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "9ded5ad8-be2b-4e67-cceb-423bc15f9799",
+					"fieldName": "Models",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "8717366e-1c67-4981-afa5-cb4bfafd7a44",
+							"fieldName": "oMultiModelMeetingRoomsInfo",
+							"fieldParent": "9ded5ad8-be2b-4e67-cceb-423bc15f9799",
+							"fieldType": "neptune.model",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "API rheinmetall_meetingroomsinfo>rheinmetall_meetingroomsinfo",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "98B3B313-DF68-EE11-9937-0022489E2195",
+							"bindingPathID": "43467e9a-cefe-4335-ba4d-a152ec44686b",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "a612a750-01ea-455f-96cc-a3a885232823",
+							"fieldName": "oMultiModelMeetingRoomsAvailability",
+							"fieldParent": "9ded5ad8-be2b-4e67-cceb-423bc15f9799",
+							"fieldType": "neptune.model",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "API rheinmetall_meetingroomsavailability>rheinmetall_meetingroomsavailability",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "BF9CA921-DF68-EE11-9937-0022489E2195",
+							"bindingPathID": "de3bd243-1348-4bd0-d663-63273ce958eb",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "9913c8f4-c302-4473-9cb7-9fa7b8847a69",
+					"fieldName": "Scripts",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "0a5d0faf-55de-474d-8114-8c286286d94e",
+							"fieldName": "GlobalVariables",
+							"fieldParent": "9913c8f4-c302-4473-9cb7-9fa7b8847a69",
+							"fieldType": "neptune.Script",
+							"script": "var meetingRoomsArray = [], meetingRoomsObj = {};",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "866b773a-16cd-4a51-da64-333e19cc1a6d",
+							"fieldName": "Functions",
+							"fieldParent": "9913c8f4-c302-4473-9cb7-9fa7b8847a69",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/Functions.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "0e3e4808-1b4a-4ea5-dff8-56aba8f377a3",
+							"fieldName": "Init",
+							"fieldParent": "9913c8f4-c302-4473-9cb7-9fa7b8847a69",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/Init.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "198f6e9b-8589-4805-d6bc-351f330b2d6c",
+					"fieldName": "APIs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "c06fd40d-9ff3-499c-d2c8-e2bbf231f485",
+							"fieldName": "getMeetingRoomsInfo",
+							"fieldParent": "198f6e9b-8589-4805-d6bc-351f330b2d6c",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "98b3b313-df68-ee11-9937-0022489e2195",
+							"restOperation": "eb49f2cb-8621-475c-ed61-fbca7cd50bca",
+							"request": [],
+							"response": [
+								{
+									"status": 200,
+									"dataId": "43467e9a-cefe-4335-ba4d-a152ec44686b",
+									"modelFieldNo": "8717366e-1c67-4981-afa5-cb4bfafd7a44"
+								}
+							],
+							"attributes": [
+								{
+									"attribute": "setInitLoad",
+									"grouping": "Model",
+									"value": "online",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.restapi/getMeetingRoomsInfo/ajaxSuccess.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "f0672962-030d-4be5-be5f-dd9459ac83ba",
+							"fieldName": "getMeetingRoomsAvailability",
+							"fieldParent": "198f6e9b-8589-4805-d6bc-351f330b2d6c",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "bf9ca921-df68-ee11-9937-0022489e2195",
+							"restOperation": "f5a6601d-1270-4e8e-f1ef-77ddf20c1c39",
+							"request": [],
+							"response": [
+								{
+									"status": 200,
+									"dataId": "de3bd243-1348-4bd0-d663-63273ce958eb",
+									"modelFieldNo": "a612a750-01ea-455f-96cc-a3a885232823"
+								}
+							],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.restapi/getMeetingRoomsAvailability/ajaxSuccess.script",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "23.10.19.1350",
+	"application": "rheinmetall_meetingroombookingviewer",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "file:///css.css",
+	"compiledCss": "file://script/undefined/undefined.script",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [
+		{
+			"id": "bf9ca921-df68-ee11-9937-0022489e2195",
+			"name": "API rheinmetall_meetingroomsavailability",
+			"ver": "23.10.18.1621"
+		},
+		{
+			"id": "98b3b313-df68-ee11-9937-0022489e2195",
+			"name": "API rheinmetall_meetingroomsinfo",
+			"ver": "23.10.16.1126"
+		}
+	],
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195"
+}

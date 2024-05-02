@@ -1,0 +1,4 @@
+apigetMeetingRoomsInfo();
+
+// Use MessageToast
+sap.m.MessageToast.show("Refreshed");

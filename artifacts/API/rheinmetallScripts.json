@@ -1,0 +1,125 @@
+{
+	"id": "8185b5b9-a36d-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-18T10:47:26.806Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "80f1a277-d461-4261-edd8-c63eb11d5dc2",
+			"method": "POST",
+			"path": "/appSendEmail",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "284aaf79-fbe8-4313-b334-7ad6d61ec93c",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [],
+					"name": "sendEmailDefinition"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "05c331af-976d-ee11-9937-0022489e2195"
+		}
+	],
+	"definitions": [
+		{
+			"id": "2ae4a59e-aa73-41cc-dc55-2623baeb05a9",
+			"name": "sendEmailDefinition",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "dd2c346c-8d95-4581-9d40-70ada9cb99fb",
+					"name": "roomID",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "966d020f-f44a-4ba1-9b6a-180b76c9e5ac",
+					"name": "roomBookedBegin",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a4d5e9ef-9e04-4d34-f463-d505ea0636ae",
+					"name": "roomBookedEnd",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "rheinmetallScripts",
+	"endpoint": "/api/serverscript/rheinmetallscripts",
+	"ver": "23.10.18.1047",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

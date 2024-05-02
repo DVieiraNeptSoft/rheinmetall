@@ -1,0 +1,65 @@
+[
+	{
+		"id": "9890ba5f-02d0-4d90-87d3-f795aa5dc606",
+		"createdAt": "1697455494449",
+		"updatedAt": "1697470712362",
+		"createdBy": "daniel.vieira@neptune-software.com",
+		"updatedBy": "daniel.vieira@neptune-software.com",
+		"roomID": "General Meeting Room",
+		"roomDescription": "Meeting room for general purposes and overall business discussions",
+		"roomEquipment": [
+			{
+				"equipment": "Projectors"
+			},
+			{
+				"equipment": "Video Conferencing Systems"
+			},
+			{
+				"equipment": "Room Control Systems"
+			}
+		],
+		"roomCapacity": 50
+	},
+	{
+		"id": "8bf393fe-abe9-47bc-a24b-172b996fad36",
+		"createdAt": "1697455494449",
+		"updatedAt": "1697470712362",
+		"createdBy": "daniel.vieira@neptune-software.com",
+		"updatedBy": "daniel.vieira@neptune-software.com",
+		"roomID": "Strategic Room",
+		"roomDescription": "Meeting room for strategic planning of company business",
+		"roomEquipment": [
+			{
+				"equipment": "Projectors"
+			},
+			{
+				"equipment": "Interactive Whiteboards"
+			},
+			{
+				"equipment": "Video Conferencing Systems"
+			},
+			{
+				"equipment": "Room Control Systems"
+			}
+		],
+		"roomCapacity": 6
+	},
+	{
+		"id": "82be576d-d706-4d21-a51a-c4a7480859e6",
+		"createdAt": "1697455494449",
+		"updatedAt": "1697470712362",
+		"createdBy": "daniel.vieira@neptune-software.com",
+		"updatedBy": "daniel.vieira@neptune-software.com",
+		"roomID": "Private Meeting Room",
+		"roomDescription": "Meeting room for private company matters",
+		"roomEquipment": [
+			{
+				"equipment": "Video Conferencing Systems"
+			},
+			{
+				"equipment": "Room Control Systems"
+			}
+		],
+		"roomCapacity": 2
+	}
+]

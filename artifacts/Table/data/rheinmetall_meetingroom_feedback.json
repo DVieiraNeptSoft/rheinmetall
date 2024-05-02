@@ -1,0 +1,32 @@
+[
+	{
+		"id": "ebaf180e-386f-ee11-9937-0022489e2195",
+		"createdAt": "1697799705027",
+		"updatedAt": "1697799705027",
+		"createdBy": "daniel.vieira@neptune-software.com",
+		"updatedBy": "daniel.vieira@neptune-software.com",
+		"roomID": "General Meeting Room",
+		"roomComment": "meh it was alright",
+		"roomRating": "2"
+	},
+	{
+		"id": "474a15fb-946e-ee11-9937-0022489e2195",
+		"createdAt": "1697729665208",
+		"updatedAt": "1697729665208",
+		"createdBy": "daniel.vieira@neptune-software.com",
+		"updatedBy": "daniel.vieira@neptune-software.com",
+		"roomID": "General Meeting Room",
+		"roomComment": "Not too bad, but it could be better",
+		"roomRating": "2"
+	},
+	{
+		"id": "442953a1-9f71-ee11-9937-0022489e2195",
+		"createdAt": "1698064092506",
+		"updatedAt": "1698064092506",
+		"createdBy": "daniel.vieira@neptune-software.com",
+		"updatedBy": "daniel.vieira@neptune-software.com",
+		"roomID": "Private Meeting Room",
+		"roomComment": "It was alright",
+		"roomRating": "3"
+	}
+]

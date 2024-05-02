@@ -1,0 +1,45 @@
+{
+	"id": "4baa38f9-dd68-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-12T09:01:48.970Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"fields": [
+		{
+			"id": "dbfc150d-94a0-43d1-aae7-8622d97b1c14",
+			"fieldName": "roomID",
+			"fieldType": "smalltext",
+			"isUnique": true,
+			"isNullable": true
+		},
+		{
+			"id": "76f897d4-c182-4a64-e9a2-0ee00a27a1c8",
+			"fieldName": "roomDescription",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "8ae8bbeb-54cd-4978-a382-6721e204cd69",
+			"fieldName": "roomEquipment",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "c03f354e-82de-4554-8a8c-c553de51351b",
+			"fieldName": "roomCapacity",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "rheinmetall_meetingroomsinfo",
+	"description": null,
+	"ver": "24.05.02.1257",
+	"enableAudit": true,
+	"includeDataInPackage": true,
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195",
+	"rolesRead": [],
+	"rolesWrite": []
+}

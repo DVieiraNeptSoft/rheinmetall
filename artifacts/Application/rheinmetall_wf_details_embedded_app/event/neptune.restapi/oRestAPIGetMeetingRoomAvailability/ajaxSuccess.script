@@ -1,0 +1,11 @@
+var bookedRoom = modeloModelArrayRoomsAvailability.getData();
+
+debugger;
+
+var options = {
+    parameters: {
+        where: JSON.stringify({ roomID: bookedRoom.roomID }),
+    },
+};
+
+apioRestAPIGetMeetingRoomsInfo(options);

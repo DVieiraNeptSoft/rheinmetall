@@ -1,0 +1,38 @@
+{
+	"id": "1b47ee2c-936e-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-19T15:21:30.566Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"fields": [
+		{
+			"id": "80d40100-49cb-406e-be7a-90ec26d06640",
+			"fieldName": "roomID",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "6dca7377-0f7e-4e44-c332-a3d94f10ebdf",
+			"fieldName": "roomComment",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "3ea2f5ef-bdbb-4833-be8c-ab766ded3f92",
+			"fieldName": "roomRating",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "rheinmetall_meetingroom_feedback",
+	"description": null,
+	"ver": "24.05.02.1257",
+	"enableAudit": true,
+	"includeDataInPackage": true,
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195",
+	"rolesRead": [],
+	"rolesWrite": []
+}

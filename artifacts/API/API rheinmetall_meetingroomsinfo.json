@@ -1,0 +1,343 @@
+{
+	"id": "98b3b313-df68-ee11-9937-0022489e2195",
+	"createdAt": "2023-10-12T09:09:42.273Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "eb49f2cb-8621-475c-ed61-fbca7cd50bca",
+			"path": "/rheinmetall_meetingroomsinfo",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1,fieldName2,fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "rheinmetall_meetingroomsinfo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "0025312e-7807-4521-fbae-e674317923ca",
+			"path": "/rheinmetall_meetingroomsinfo",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "rheinmetall_meetingroomsinfo"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "rheinmetall_meetingroomsinfo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "dd4145fe-729d-4d15-ba85-21eab01cb093",
+			"path": "/rheinmetall_meetingroomsinfo",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "rheinmetall_meetingroomsinfo"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "rheinmetall_meetingroomsinfo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "aa989e05-83ca-4bec-a44f-f3a601397237",
+			"path": "/rheinmetall_meetingroomsinfo",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "rheinmetall_meetingroomsinfo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "9ee22060-bf9e-4121-e8ea-9575ddeda6c7",
+			"path": "/rheinmetall_meetingroomsinfo/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "43467e9a-cefe-4335-ba4d-a152ec44686b",
+			"name": "rheinmetall_meetingroomsinfo",
+			"properties": [
+				{
+					"id": "0cc1e23c-20ec-4c1a-87db-792f07b69692",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "d5c4b5dd-ac56-400d-d01f-c1d8b7914f13",
+					"parent": "",
+					"name": "roomID",
+					"objectType": "string"
+				},
+				{
+					"id": "86eb15ea-f14f-449f-bd4d-b13061ac4333",
+					"parent": "",
+					"name": "roomDescription",
+					"objectType": "string"
+				},
+				{
+					"id": "e97f75f0-259e-465a-c23e-e207563acc5e",
+					"parent": "",
+					"name": "roomEquipment",
+					"objectType": "object"
+				},
+				{
+					"id": "026c0286-7152-4178-9920-4f431e30e82c",
+					"parent": "",
+					"name": "roomCapacity",
+					"objectType": "integer"
+				},
+				{
+					"id": "619d94f9-edbf-486b-ebb1-0cce9a39cf16",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "7588f7fa-aaef-4113-d8ea-c9c1df3a2573",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "43677716-3f2c-4b0d-fa77-6e9976714b06",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "87819915-97c9-4d2f-e61c-8a24fc26742d",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "681fdb1d-19b8-4d4e-e553-58ab48d48be8",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "af4b1598-78d1-4e5e-ce36-9598139a57c0",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "e85f1a39-8d11-4f4b-ae58-072bcb70a6b7",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "2f3720aa-93b5-4033-b6b1-a5c6decd2acb",
+			"name": "count",
+			"properties": [
+				{
+					"id": "4fd5057c-80a8-479c-c2b5-4584edc2474a",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "API rheinmetall_meetingroomsinfo",
+	"endpoint": "/api/entity",
+	"ver": "23.10.16.1126",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "b257a2d0-dd68-ee11-9937-0022489e2195",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}
